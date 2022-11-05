@@ -16,6 +16,7 @@ const SubmitLongLatScreen = ({ onPress }) => {
       <FormControl isRequired w="75%" maxW="300px">
         <FormControl.Label>Latitude</FormControl.Label>
         <Input
+          testID="lat-testId"
           keyboardType={"decimal-pad"}
           onChangeText={(value) => setLatitude(value)}
           value={latitude}
@@ -27,6 +28,7 @@ const SubmitLongLatScreen = ({ onPress }) => {
       <FormControl style={{ marginTop: 10 }} isRequired w="75%" maxW="300px">
         <FormControl.Label>Longitude</FormControl.Label>
         <Input
+          testID="long-testId"
           keyboardType={"decimal-pad"}
           onChangeText={(value) => setLongitude(value)}
           value={longitude}

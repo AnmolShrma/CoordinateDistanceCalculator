@@ -7,6 +7,7 @@ const EnableLocationScreen = ({ onPress }) => {
     <Box flex={1} alignItems="center" justifyContent={"center"}>
       <Heading>Please Enable Location</Heading>
       <Button
+        testID="enable-btn"
         colorScheme="green"
         style={{ width: "50%", marginTop: 30 }}
         onPress={onPress}
