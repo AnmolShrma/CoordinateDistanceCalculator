@@ -12,8 +12,8 @@ const AppNavigation = () => {
   const [initialRouteName, setInitialRouteName] = useState(null);
   useEffect(() => {
     (async () => {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
+      let { granted } = await Location.requestForegroundPermissionsAsync();
+      if (!granted) {
         setInitialRouteName("EnableLocation");
         return;
       }
